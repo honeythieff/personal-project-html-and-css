@@ -1,0 +1,913 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transition: all 0.3s ease;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-block {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.light-blue {
+    background-color: #2C3E50;
+}
+
+.gray {
+    background-color: #CCCCCC;
+}
+
+.green {
+    background-color: #1ABC9C;
+}
+
+.section__title {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.section__title-highlight {
+    font-weight: 900;
+    color: #34495E;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--green {
+    background-color: #1ABC9C;
+}
+
+.btn--transparent {
+    background-color: transparent;
+    border: solid #fff 1px;
+}
+
+.btn--blue {
+    background-color: #1D2C3B;
+}
+
+.btn--light-gray {
+    background-color: #A1B1BC;
+}
+
+.fa-star {
+    color: #1ABC9C;
+}
+
+.fa-star-o {
+    color: #A1B1BC;
+}
+
+/* global */
+
+.header {
+    height: 905px;
+}
+
+.header__top {
+    padding: 26px 0 26px;
+}
+
+.header__top-logo {
+    max-width: 195px;
+}
+
+.header__top-logo-text {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    margin-left: 16px;
+}
+
+.header__top-logo-text-highlight {
+    font-size: 35px;
+}
+
+.header__top-logo-text-highlight--white {
+    font-weight: 900;
+}
+
+.header__top-logo-text-highlight--green {
+    color: #1ABC9C;
+}
+
+.header__top-nav-el {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    margin-left: 37px;
+}
+
+.header__top-nav-el:nth-child(1) {
+    margin-left: 0;
+}
+
+.header__top-nav-el:hover, .header__top-nav-el.active {
+    color: #1ABC9C;
+}
+
+.header__top-icons-el {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid #fff 2px;
+}
+
+.header__top-icons-el:nth-child(2) {
+    margin-left: 10px;
+}
+
+.header__top-icons-el:hover {
+    background-color: #1ABC9C;
+    border: solid #1ABC9C 2px;
+}
+
+.header__top-icons-el.active {
+    background-color: #1ABC9C;
+    border: solid #1ABC9C 2px; 
+}
+
+.header__bottom {
+    height: calc(100% - 111px);
+}
+
+.header__bottom .container {
+    height: 100%;
+}
+
+.header__bottom-slide {
+    height: 100%;
+    background: url('../images/header-phones.png') center left no-repeat;
+}
+
+.header__bottom-slider-control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    top: 50%;
+    background-color: transparent;
+    border: solid #fff 2px;
+    color: #fff;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.header__bottom-slider-control:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.header__bottom-slider-control--left {
+    left: 65px;
+}
+
+.header__bottom-slider-control--right {
+    right: 65px;
+}
+
+.header__bottom-slide-desc {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    max-width: 585px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.header__bottom-slide-subtitle {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.header__bottom-slide-title {
+    font-size: 90px;
+    font-weight: 300;
+}
+
+.header__bottom-slide-title-highlight--i {
+    font-weight: 400;
+}
+
+.header__bottom-slide-title-highlight--box {
+    margin-left: 15px;
+    width: 68px;
+    height: 68px;
+    border: solid #fff 2px;
+    font-size: 70px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 68px;
+}
+
+.header__bottom-slide-text {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 45px 0 65px;
+}
+
+.header__bottom-slide-details {
+    margin-left: 25px;
+}
+
+.header__bottom-slide-details .btn:nth-child(2) {
+    margin-left: 10px;
+}
+
+.header__bottom-slide-details .btn {
+    width: 160px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+/* header */
+
+.featured {
+    margin: 55px 0 100px;
+    padding: 40px 0 100px;
+    background-color: #ECF0F1;
+}
+
+.featured__products-item{
+    width: 270px;
+    height: 555px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.featured__products-item-photo-holder {
+    height: 65%;
+}
+
+.featured__products-item-desc {
+    height: 35%;
+    box-sizing: border-box;
+    border: solid #E6E6E6 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.featured__products-item-desc-inner {
+    padding: 20px;
+}
+
+.featured__products-item-desc-title {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.featured__products-item-desc-rating {
+    margin-bottom: 20px;
+}
+
+.featured__products-item-desc-bottom {
+    border-top: solid #E6E6E6 1px;
+}
+
+.featured__products-item-desc-price {
+    color: #2C3E50;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.featured__products-item-desc-bottom {
+    padding: 13px 10px;
+}
+
+.featured__products-item-desc-bottom .btn {
+    width: 105px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.featured__products-item:hover .featured__products-item-desc {
+    background-color: #1D2C3B;
+    transition: all 0.3s ease;
+}
+
+.featured__products-item:hover .featured__products-item-desc-price,  .featured__products-item:hover .featured__products-item-desc-title{
+    color: #fff;
+}
+
+.featured__products-item:hover .featured__products-item-desc .btn--add-to-cart {
+    background-color: #1ABC9C;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.featured__products-item:hover .featured__products-item-desc .btn--view-details {
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: solid 1px #fff;
+}
+
+/* featured products */
+
+.advertisement {
+    margin-bottom: 50px;
+}
+
+.advertisement__icon {
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    border-radius: 50%;
+    line-height: 100px;
+    color: #fff;
+    background-color: #1ABC9C;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.advertisement__desc {
+    font-family: 'Lato', sans-serif;
+}
+
+.advertisement__desc-title {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #34495E;
+}
+
+.advertisement__desc-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A1B1BC;
+    margin-top: 15px;
+}
+
+.btn--purchase {
+    background-color: #1D2C3B;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    width: 210px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* advertisement */
+
+.trend-phones {
+    margin-bottom: 60px;
+}
+
+.trend-phones__item {
+    max-width: 383px;
+    height: 455px;
+}
+
+.trend-phones__item--main {
+    max-width: 100%!important;
+    height: 600px;
+    background-color: #CCCCCC;
+}
+
+.trend-phones__item-photo-holder {
+    background-color: #CCCCCC;
+    height: 43%;
+}
+
+.trend-phones__item-desc {
+    height: 57%;
+}
+
+.trend-phones__bottom {
+    margin-top: 10px;
+}
+
+.trend-phones__item-text {
+    right: 90px;
+    top: 35%;
+}
+
+.trend-phones__items-text-title {
+    font-size: 60px;
+    font-weight: 300;
+    color: #2C3E50;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
+}
+
+.trend-phones__item-text-title-highlight {
+    background-color: #17D8B2;
+    color: #fff;
+    font-weight: 900;
+    width: 48px;
+    height: 64px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 64px;
+}
+
+.trend-phones__item-text-desc {
+    margin-top: 25px;
+}
+
+.trend-phones__item-text-desc-el {
+    margin-top: 20px;
+    color: #2C3E50;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+.trend-phones__item-text-desc-el:first-child {
+    margin-top: 0;
+}
+
+.btn--more-details {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius: 0;
+}
+
+.trend-phones__item-desc {
+    background-color: #ECF0F1;
+    font-family: 'Lato', sans-serif;
+}
+
+.trend-phones__item-desc-inner {
+    padding: 35px 30px;
+}
+
+.trend-phones__item-desc-title {
+    color: #2C3E50;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.trend-phones__item-desc-text {
+    color: #A1B1BC;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn--trend-phones {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+    text-align: left;
+    padding: 0 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+.trend-phones__item:hover .trend-phones__item-photo-holder{
+    transition: all 0.3s ease;
+    background: url("../images/plus-icon.png") center no-repeat #1ABC9C;
+}
+
+.trend-phones__item:hover .trend-phones__item-desc{
+    background-color: #2C3E50;
+    transition: all 0.3s ease;
+}
+
+.trend-phones__item:hover .btn--trend-phones {
+    background-color: #1E2A37;
+    transition: all 0.3s ease;
+}
+
+.trend-phones__item:hover .trend-phones__item-desc-title {
+    color: #fff;
+}
+
+/* trend phones */
+
+.recent-products {
+    margin-bottom: 100px;
+}
+
+.recent-products .section__title {
+    margin: 0;
+}
+
+.recent-products__top-control-holder {
+    width: 35px;
+    height: 35px;
+    border: solid #CDD9E1 1px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #A1B1BC;
+    margin-left: 10px;
+}
+
+.recent-products__top-control-holder:hover {
+    color: #Fff;
+    transition: all 0.3s ease;
+    background-color: #2C3E50;
+}
+
+.recent-products__top-control-holder:nth-child(1) {
+    margin-left: 0;
+}
+
+.recent-products__top {
+    margin-bottom: 55px;
+}
+
+.recent-products__bottom-item {
+    width: 270px;
+    height: 555px;
+    border: solid #E6E6E6 1px;
+    border-radius: 10px;
+}
+
+.recent-products__bottom-item-top {
+    height: 65%;
+}
+
+.recent-products__bottom-item-top-badge {
+    background-color: #E46960;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+.recent-products__bottom-item:hover  .featured__products-item-desc{
+    background-color: #1D2C3B;
+    transition: all 0.3s ease;
+}
+
+.recent-products__bottom-item:hover .featured__products-item-desc-price, .recent-products__bottom-item:hover .featured__products-item-desc-title{
+    color: #fff;
+}
+
+.recent-products__bottom-item:hover .featured__products-item-desc .btn--add-to-cart {
+    background-color: #1ABC9C;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.recent-products__bottom-item:hover .featured__products-item-desc .btn--view-details {
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: solid 1px #fff;
+}
+
+.recent__products__bottom-item-badge--blue {
+    background-color: #21C2F8;
+}
+
+.recent-products__bottom-bottom-row {
+    margin-top: 30px;
+}
+
+.featured__products-item-desc-price--discount {
+    background-color: #21C2F8;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* recent products */
+
+.news__item {
+    max-width: 570px;
+    font-family: 'Lato', sans-serif;
+    height: 195px;
+    border: solid #707070 1px;
+}
+
+.news__item-details {
+    width: 7%;
+    background-color: #686D80;
+    height: 100%;
+}
+
+.news__item-photo-holder {
+    width: 45%;
+    background-color: #CCCCCC;
+    height: 100%;
+}
+
+.news__item-desc {
+    width: 48%;
+    height: 100%;
+}
+
+.news__item-desc-inner {
+    padding: 20px;
+}
+
+.news__item-desc-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2C3E50;
+}
+
+.news__item-desc-subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    color: #34495E;
+    margin: 10px 0 20px;
+}
+
+.news__item-desc-text {
+    font-size: 15px;
+    color: #A1B1BC;
+}
+
+.news__item:hover .news__item-desc {
+    transition: all 0.3s ease;
+    background-color: #34495E;
+}
+
+.news__item:hover .news__item-desc-subtitle {
+    color: #fff;
+}
+
+.news__item:hover .news__item-desc-title {
+    color: #fff;
+}
+
+.news__item:hover .news__item-photo-holder {
+    background: url('../images/search.png') #1ABC9C no-repeat center;
+    transition: all 0.3s ease;
+}
+
+.news__item:hover .news__item-details-icons-el:first-child {
+    background-color: #000;
+}
+
+.news__item:hover .news__item-details-icons-el:nth-child(2) {
+    background-color: #7BC200;
+}
+
+.news__item-details-icons {
+    height: 100%;
+}
+
+.news__item-details-icons-el {
+    width: 100%;
+    height: 20%;
+    line-height: 39px;
+    text-align: center;
+    border-bottom: solid #fff 1px;
+    color: #fff;
+}
+
+.news__item-details-icons-el:first-child {
+    background-color: #1ABC9C;
+}
+
+.news__item-details-icons-el:nth-child(2) {
+    background-color: #3A3E4A;
+}
+
+.news__item-details-icons-el:last-child {
+    height: 40%;
+    line-height: normal;
+    font-size: 18px;
+    border-bottom: none;
+}
+
+.news__item-details-icons-el span{
+    margin-top: 17px;
+}
+
+.news__item-bottom-row {
+    margin-top: 30px;
+}
+
+/* news */
+
+.store-design {
+    margin-top: 85px;
+    height: 665px;
+    background: url('../images/laptop.png') #000 center 320px no-repeat;
+    font-family: 'Lato', sans-serif;
+}
+
+.header__bottom-slider-control--store-design {
+    border-radius: 50%;
+}
+
+.store-design .section__title {
+    padding: 100px 0 20px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.store-design .section__title-highlight {
+    color: #fff;
+}
+
+.store-design__text {
+    margin: 0 auto;
+    max-width: 475px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px; 
+}
+
+.store-design .btn {
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 0;
+    margin: 25px 10px 0 0; 
+}
+
+.btn--cyan {
+    background-color: #21C2F8;
+}
+
+/* store design */
+
+.services {
+    margin-top: 100px;
+    font-family: 'Lato', sans-serif;
+}
+
+.services .section__title {
+    margin-bottom: 50px;
+}
+
+.services__why-us-list {
+    max-width: 575px;
+}
+
+.services__why-us-list-el {
+    width: 100%;
+    height: 40px;
+    border: solid #E5E5E5 1px;
+    margin-bottom: 5px;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+.services__why-us-list-el a{
+    color: #A1B1BC;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.services__why-us-list-el a:hover .services__why-us-list-el-title{
+    color: #1ABC9C;
+    font-weight: 900;
+}
+
+.services__why-us-list-el-title {
+    padding-left: 15px;
+}
+
+.services__why-us-list-el:nth-child(2) {
+    height: auto;
+}
+
+.services__why-us-list-el-head {
+    height: 40px;
+    border-bottom: solid #E5E5E5 1px;
+}
+
+.services__why-us-list-el-desc {
+    padding: 25px 15px;
+    line-height: normal;
+    width: 100%;
+}
+
+.services__why-us-list-el-desc-photo-holder {
+    width: 80px!important;
+    height: 80px;
+    background-color: #CCCCCC;
+}
+
+.services__why-us-list-el-desc-text {
+    width: 410px;
+}
+
+.services__service {
+    height: 358px;
+    margin-left: 20px;
+}
+
+.services__service-inner {
+    border: solid #E5E5E5 1px;
+    height: 267px;
+}
+
+.services__service-inner-top-list {
+    border-bottom: solid #E5E5E5 1px;
+}
+
+.services__service-inner-top-list-el {
+    text-align: center;
+    border-left: solid #E5E5E5 1px;
+    width:25%;
+    padding: 10px;
+}
+
+.services__service-inner-top-list-el a {
+    color: #A1B1BC;
+}
+
+.services__service-inner-top-list-el a:hover {
+    color: #1ABC9C;
+    font-weight: 900;
+}
+
+.services__service-inner-bottom {
+    padding: 25px 20px;
+    color: #A1B1BC;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.services__service-inner-bottom-inner-text {
+    padding-left: 20px;
+}
+
+/* services */
+
+/* content */
